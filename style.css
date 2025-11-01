@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #1c1c1c;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000;
+}
+
+.hero h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Network Buttons */
+.network-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.network-buttons button {
+  background-color: #f5f9ff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 8px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.network-buttons button.active {
+  background-color: #ffea00;
+}
+
+.network-buttons button:hover {
+  transform: translateY(-3px);
+  background-color: #fff;
+}
+
+.network-buttons button img{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Hero Text */
+.hero-text h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.connect {
+  background-color: #ffee00;
+  color: #000;
+}
+
+.sync {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+/* Section 2: Steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #000;
+  border-radius: 20px 20px 0 0;
+  margin: 40px 0;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 25px;
+}
+
+.step {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.step img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Section 3: Features Grid */
+/* ===== FEATURE GRID SECTION ===== */
+/* ===== FEATURE GRID SECTION ===== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 18px;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.feature-card {
+  background: #f8f8f8;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px 10px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Smaller emoji icons */
+.feature-card .icon {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+/* Bigger text titles */
+.feature-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+/* Desktop styling */
+@media (min-width: 768px) {
+  .features-grid {
+    gap: 25px;
+    padding: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .feature-card {
+    padding: 35px 15px;
+  }
+
+  .feature-card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .feature-card h4 {
+    font-size: 18px;
+  }
+}
+
+
+/* Section 4: Wallet Rectify Info */
+.rectify-info {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.rectify-header p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.rectify-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.4;
+}
+
+.rectify-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.rectify-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.rectify-logo img {
+  width: 50px;
+}
+
+.rectify-logo h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.rectify-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Section 5: Subscribe Section */
+.subscribe-section {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 60px 25px;
+}
+
+.subscribe-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.subscribe-form input:focus {
+  border-color: #000;
+}
+
+.subscribe-form button {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+.warning-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* ======= Desktop Adjustments ======= */
+@media (min-width: 768px) {
+  .hero {
+    padding: 80px 60px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+  }
+
+  .btn-group .btn {
+    font-size: 16px;
+    padding: 16px 40px;
+  }
+
+  .steps {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 80px;
+  }
+
+  .step {
+    width: 30%;
+    padding: 40px 25px;
+  }
+
+  
+
+  .rectify-info {
+    padding: 80px 60px;
+  }
+
+  .rectify-header h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .rectify-card {
+    padding: 50px 40px;
+  }
+
+  .subscribe-section h2 {
+    font-size: 30px;
+  }
+
+  .subtext {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .subscribe-form input {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .subscribe-form button {
+    width: 25%;
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .warning-text {
+    font-size: 14px;
+  }
+}
