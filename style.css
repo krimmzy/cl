@@ -18,14 +18,14 @@ body {
     height: 70px;
     overflow: hidden;
     background: #1a1d24;
-    padding: 10px 0;
+    padding: 5px 0;
     border-radius: 6px;
   }
 
   .ticker__move {
     display: flex;
     align-items: center;
-    animation: scroll 15s linear infinite;
+    animation: scroll 5s linear infinite;
   }
 
   @keyframes scroll {
@@ -494,4 +494,5 @@ body {
     font-size: 14px;
   }
 }
+
 
