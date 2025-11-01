@@ -11,6 +11,58 @@ body {
   color: #fff;
 }
 
+
+
+.ticker {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: #1a1d24;
+    padding: 10px 0;
+    border-radius: 6px;
+  }
+
+  .ticker__move {
+    display: flex;
+    align-items: center;
+    animation: scroll 35s linear infinite;
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .coin {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-size: 16px;
+  }
+
+  .coin span {
+    margin: 0 6px;
+  }
+
+  .price {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .up {
+    color: #22c55e; /* green */
+  }
+
+  .down {
+    color: #ef4444; /* red */
+  }
+
+  .coin img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
 /* Navbar */
 .navbar {
   display: flex;
